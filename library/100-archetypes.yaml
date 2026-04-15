@@ -24,12 +24,12 @@ library:
         name: 幼鼠
         feature: 只藏一颗松果，转头就忘
         irony: 以为自己有食物，其实胃里空空
-        punchline: 一只幼鼠藏了1颗松果，1分钟后忘了在哪，饿死了
+        punchline: 一只幼鼠藏了松果，忘了在哪，饿死了
       pupa:
         name: 青年鼠  
         feature: 到处埋松果，偶尔能找到
         irony: 秋天很忙，冬天很慌
-        punchline: 一只青年鼠埋了100颗松果，冬天找到3颗，饿瘦了
+        punchline: 一只青年鼠埋了一堆松果，冬天找到几颗，饿瘦了
       adult:
         name: 成年鼠
         feature: 有计划储备，建立记忆地图
@@ -39,7 +39,7 @@ library:
         name: 松鼠王
         feature: 不仅自己囤，还教小松鼠囤
         irony: 从囤积者变成囤积教父
-        punchline: 松鼠王写了《松果囤积指南》，弟子三千——但它自己还在囤
+        punchline: 松鼠王写了《松果囤积指南》，弟子满天下——但它自己还在囤
     breadthVariants:
       specialist: 只囤一种松果（橡果专家）
       tShaped: 主囤橡果+兼囤坚果+会找水源
@@ -58,19 +58,19 @@ library:
     stages:
       larva:
         name: 幼仓鼠
-        feature: 跑3圈就累，停下来吃瓜子
+        feature: 跑几圈就累，停下来吃瓜子
         irony: 还没学会"坚持"
-        punchline: 幼仓鼠跑了3圈，吃了5分钟瓜子——它以为这就是生活
+        punchline: 幼仓鼠跑了几圈，吃了瓜子——它以为这就是生活
       pupa:
         name: 青年仓鼠
-        feature: 能跑30圈，但只在晚上跑
+        feature: 能跑很多圈，但只在晚上跑
         irony: 很努力，但没人看见（包括自己）
-        punchline: 青年仓鼠每晚跑30圈，跑轮上刻着"坚持"——它没注意到轮子在原地
+        punchline: 青年仓鼠每晚跑很多圈，轮子上刻着"坚持"——它没注意到轮子在原地
       adult:
         name: 成年仓鼠
-        feature: 每天跑100圈，制定配速计划
+        feature: 每天跑很多圈，制定配速计划
         irony: 配速提高了，笼子还在原地
-        punchline: 成年仓鼠制定了《100天配速提升计划》，第100天它跑得更快了——笼子还在原地，它也更累了
+        punchline: 成年仓鼠制定了《配速提升计划》，跑得更快了——笼子还在原地，它也更累了
       perfect:
         name: 仓鼠教练
         feature: 不仅自己跑，还教别的仓鼠跑
@@ -101,17 +101,17 @@ library:
         name: 青年鸟
         feature: 建了个草窝，放了几个石子
         irony: 有形状了，但还很简陋
-        punchline: 青年鸟建了草窝，放了3颗石子——雌鸟路过看了一眼，走了，去找有蓝色塑料片的
+        punchline: 青年鸟建了草窝，放了几颗石子——雌鸟路过看了一眼，走了，去找有蓝色塑料片的
       adult:
         name: 成年鸟
         feature: 精心收集彩色石子、瓶盖、羽毛，排列成图案
         irony: 亭子精美，但不能住
-        punchline: 成年鸟的亭子有247颗彩色石子，按渐变色排列——雌鸟来看了10分钟，走了，去找能住的房子
+        punchline: 成年鸟的亭子有很多彩色石子，按渐变色排列——雌鸟来看了很久，走了，去找能住的房子
       perfect:
         name: 鸟王
         feature: 不仅自己建，还偷别的鸟的装饰品
         irony: 从建造者变成收集家，甚至小偷
-        punchline: 鸟王的亭子有1000件装饰品，包括偷来的——雌鸟来了，但只问"这是从哪偷的"
+        punchline: 鸟王的亭子有很多装饰品，包括偷来的——雌鸟来了，但只问"这是从哪偷的"
     breadthVariants:
       specialist: 只用蓝色物品（蓝色狂魔）
       tShaped: 主用蓝色+兼用金属+会用空间
@@ -136,22 +136,22 @@ library:
         name: 幼苗
         feature: 长叶子，不开花
         irony: 大家都在等，它说"再等等"
-        punchline: 昙花幼苗长了3年叶子——园丁说"快了"，说了36个月
+        punchline: 昙花幼苗长了很久叶子——园丁说"快了"，说了很久
       pupa:
         name: 小树
-        feature: 开了一朵花，只开了1小时
+        feature: 开了一朵花，只开了一会儿
         irony: 确实开了，但没人看见
-        punchline: 昙花开了一朵，凌晨3点开，4点谢——只有夜猫子看见，拍了张模糊的照片
+        punchline: 昙花开了一朵，在深夜——只有夜猫子看见，拍了张模糊的照片
       adult:
         name: 成树
-        feature: 每年开一次，一次4小时，很壮观
+        feature: 每年开一次，一次几小时，很壮观
         irony: 很美，但只能拍照，不能结果
-        punchline: 昙花开了33次，每次朋友圈100个赞——但没人吃过昙花果，因为不结果
+        punchline: 昙花开了很多次，每次朋友圈很多赞——但没人吃过昙花果，因为不结果
       perfect:
         name: 昙花王
         feature: 不仅自己开，还被移植到各地展览
         irony: 成为景点，但依然是昙花一现在
-        punchline: 昙花王在植物园有专馆，门票20元——人们在馆外等4小时，看10分钟，然后发朋友圈"太美了，稍纵即逝"
+        punchline: 昙花王在植物园有专馆，门票不菲——人们在馆外等很久，看一会儿，然后发朋友圈"太美了，稍纵即逝"
     breadthVariants:
       specialist: 只开白花（单色专家）
       tShaped: 主开白花+兼长绿叶+会扦插
@@ -172,12 +172,12 @@ library:
         name: 幼苗
         feature: 碰一下就闭合，过会儿开
         irony: 还在学习"这个世界会伤害我"
-        punchline: 含羞草幼苗被碰了，闭合了——5分钟后开了，以为安全了，又被碰，又闭合
+        punchline: 含羞草幼苗被碰了，闭合了——一会儿开了，以为安全了，又被碰，又闭合
       pupa:
         name: 青年株
         feature: 一碰就闭合，很久才开
         irony: 学会了"外面很危险"
-        punchline: 青年含羞草被碰了33次，现在碰一下就闭——它忘了要光合作用，整天闭着
+        punchline: 青年含羞草被碰了很多次，现在碰一下就闭——它忘了要光合作用，整天闭着
       adult:
         name: 成株
         feature: 叶子永远半闭，不再完全打开
@@ -211,23 +211,23 @@ library:
       larva:
         name: 毛坯房
         feature: 只画图纸，没开始施工
-        irony: 还没动工，但已经换了3个设计师
-        punchline: 毛坯房设计图改了33版，设计师换了5个——墙还是白的，但房主说"这次风格对了"
+        irony: 还没动工，但已经换了很多设计师
+        punchline: 毛坯房设计图改了很多版，设计师换了不少——墙还是白的，但房主说"这次风格对了"
       pupa:
         name: 简装房
         feature: 施工一半，停工了
         irony: 看得见希望，但住不进去
-        punchline: 简装房水电做完了，瓦工进场3天走了——房主说"等等，我想改方案"
+        punchline: 简装房水电做完了，瓦工进场几天走了——房主说"等等，我想改方案"
       adult:
         name: 精装房
         feature: 装修完成，家具进场，但很乱
         irony: 能住了，但房主还在调整
-        punchline: 精装房装修了2年，家具进场了——但房主每天调沙发布局，自己睡客厅
+        punchline: 精装房装修了很久，家具进场了——但房主每天调沙发布局，自己睡客厅
       perfect:
         name: 样板间
         feature: 完美展示，禁止入住，仅供参观
         irony: 从家变成展品
-        punchline: 样板间开放参观，门票50元——房主自己住在隔壁出租屋，每天来擦灰
+        punchline: 样板间开放参观，门票不菲——房主自己住在隔壁出租屋，每天来擦灰
     breadthVariants:
       specialist: 只装修一个房间（到极致）
       tShaped: 主卧精装+兼客厅简装+会厨房
@@ -263,7 +263,7 @@ library:
         name: 博物馆样板
         feature: 成为景点，有讲解服务
         irony: 从卖房工具变成文化遗产
-        punchline: 博物馆样板房有志愿者讲解"这是2010年代房地产泡沫的见证"——导游说"别碰那沙发，会塌"
+        punchline: 博物馆样板房有志愿者讲解"这是房地产泡沫的见证"——导游说"别碰那沙发，会塌"
     breadthVariants:
       specialist: 只展示一种风格（极简专家）
       tShaped: 主极简+兼会轻奢+能北欧
@@ -286,29 +286,29 @@ library:
     stages:
       larva:
         name: 体验卡
-        feature: 只去过1次，拍了个照
+        feature: 只去过几次，拍了个照
         irony: 连试都懒得试
-        punchline: 体验卡去了1次，拍了10张照片，发了朋友圈"健身打卡第1天"——然后没然后了
+        punchline: 体验卡去了几次，拍了很多照片，发了朋友圈"健身打卡"——然后没然后了
       pupa:
         name: 月卡
-        feature: 去了3次，放弃了
+        feature: 去了几次，放弃了
         irony: 试过了，坚持不下去
-        punchline: 月卡去了3次，每次跑步10分钟，洗澡30分钟——第4次直接洗澡，然后不来了
+        punchline: 月卡去了几次，每次跑步一会儿，洗澡很久——后来直接洗澡，然后不来了
       adult:
         name: 年卡
-        feature: 去了10次，但无效果
+        feature: 去过很多次，但无效果
         irony: 坚持了，但方法不对
-        punchline: 年卡去了10次，每次都练自拍——1年后体重没变，但手机里多了200张健身照
+        punchline: 年卡去了很多次，每次都练自拍——很久后体重没变，但手机里多了很多健身照
       perfect:
         name: 终身卡
         feature: 不仅自己去，还拉朋友办卡
         irony: 从受害者变成推销员
-        punchline: 终身卡用户办了5年，拉了10个朋友办卡——健身房老板给他发了"最佳推销员"奖
+        punchline: 终身卡用户办了多年，拉了很多朋友办卡——健身房老板给他发了"最佳推销员"奖
     breadthVariants:
       specialist: 只练一个器械（跑步机专家）
       tShaped: 主跑步+兼会游泳+能瑜伽
       piShaped: 跑步专家+力量专家（两张卡）
-      generalist: 什么课都报（瑜伽、游泳、拳击、舞蹈——都去1次）
+      generalist: 什么课都报（瑜伽、游泳、拳击、舞蹈——都去几次）
     temperament:
       controller: 严格按计划训练，记录每次数据
       laisserFaire: 想练就练，看心情
@@ -322,24 +322,24 @@ library:
     stages:
       larva:
         name: 新手收藏夹
-        feature: 收藏了10篇，看了1篇
+        feature: 收藏了一些，看了很少
         irony: 刚开始，还有救
-        punchline: 新手收藏夹10篇，看了1篇——他说"明天一定看"
+        punchline: 新手收藏夹内容不多，看了很少——他说"明天一定看"
       pupa:
         name: 重度收藏夹
-        feature: 收藏了100篇，看了5篇
+        feature: 收藏了很多，看了很少
         irony: 收藏即遗忘
-        punchline: 重度收藏夹100篇，标记"稍后阅读"——最早的1篇是3个月前的，他至今"稍后"了90天
+        punchline: 重度收藏夹内容很多，标记"稍后阅读"——最早的内容是很久以前的，他至今"稍后"了很久
       adult:
         name: 超级收藏夹
-        feature: 收藏了1000篇，从不看，但继续收藏
+        feature: 收藏了无数，从不看，但继续收藏
         irony: 收藏成了强迫症
-        punchline: 超级收藏夹1000篇，每天新增10篇——他说"这是知识管理"，但搜索时永远用百度
+        punchline: 超级收藏夹内容无数，每天新增——他说"这是知识管理"，但搜索时永远用百度
       perfect:
         name: 收藏夹博主
         feature: 分享收藏夹，教人怎么收藏
         irony: 从囤积者变成收藏教育家
-        punchline: 收藏夹博主写了《如何高效收藏》，有10万粉丝——但他自己的收藏夹有5000篇未读
+        punchline: 收藏夹博主写了《如何高效收藏》，有很多粉丝——但他自己的收藏夹有无数未读
     breadthVariants:
       specialist: 只收藏一个领域（技术文章专家）
       tShaped: 主技术+兼会产品+能商业
@@ -364,12 +364,12 @@ library:
         name: 小流星
         feature: 进入大气层，闪了一下，没了
         irony: 还没被看见，就烧完了
-        punchline: 小流星闪了一下，只有天文望远镜看见—— astronomer 记了笔记，但忘了名字
+        punchline: 小流星闪了一下，只有天文望远镜看见——天文学家记了笔记，但忘了名字
       pupa:
         name: 流星
         feature: 划过天空，被许愿，然后没了
         irony: 被看见，被利用，被遗忘
-        punchline: 流星划过，1000人许愿——愿望还没实现，流星已经烧完了
+        punchline: 流星划过，很多人许愿——愿望还没实现，流星已经烧完了
       adult:
         name: 火流星
         feature: 很亮，落地成坑，留下陨石
@@ -379,7 +379,7 @@ library:
         name: 陨石收藏家
         feature: 不仅坠落，还被收藏、展览、研究
         irony: 从星星变成石头，再变成展品
-        punchline: 陨石在博物馆展出，门票20元——标签写"来自太空"，但它现在只是块石头
+        punchline: 陨石在博物馆展出，门票不菲——标签写"来自太空"，但它现在只是块石头
     breadthVariants:
       specialist: 只燃烧一次（单次坠落专家）
       tShaped: 主燃烧+兼会发光+能留痕
@@ -402,19 +402,19 @@ library:
     stages:
       larva:
         name: 小蛇
-        feature: 吃了3个豆子，撞墙死了
+        feature: 吃了几个豆子，撞墙死了
         irony: 还没长大，就死了
-        punchline: 小蛇吃了3个豆子，撞墙了——它还没学会转方向键
+        punchline: 小蛇吃了几个豆子，撞墙了——它还没学会转方向键
       pupa:
         name: 中蛇
-        feature: 吃了20个豆子，撞到自己尾巴
+        feature: 吃了很多豆子，撞到自己尾巴
         irony: 长大了，被自己困住
-        punchline: 中蛇吃了20个豆子，身体长了——转了个弯，撞到自己尾巴，游戏结束
+        punchline: 中蛇吃了很多豆子，身体长了——转了个弯，撞到自己尾巴，游戏结束
       adult:
         name: 大蛇
-        feature: 吃了50个豆子，屏幕装不下
+        feature: 吃了很多豆子，屏幕装不下
         irony: 成功到失败只有一步
-        punchline: 大蛇吃了50个豆子，占满屏幕——没地方去了，咬了一口自己的尾巴，game over
+        punchline: 大蛇吃了很多豆子，占满屏幕——没地方去了，咬了一口自己的尾巴，game over
       perfect:
         name: 蛇王
         feature: 不仅自己吃，还教别的蛇怎么吃
@@ -449,22 +449,22 @@ library:
         name: 五用刀
         feature: 刀、锯、剪刀、螺丝刀、开瓶器
         irony: 功能多了，每个都不好用
-        punchline: 五用刀有5个功能——切菜不如菜刀，锯木不如锯子，但应急时都能凑合
+        punchline: 五用刀有多个功能——切菜不如菜刀，锯木不如锯子，但应急时都能凑合
       adult:
         name: 十用刀
-        feature: 10个功能，但都很小
+        feature: 很多功能，但都很小
         irony: 功能越多，每个越废
-        punchline: 十用刀有10个功能，包括牙签和镊子——主人用了3年，主要用刀，其他都生锈了
+        punchline: 十用刀有很多功能，包括牙签和镊子——主人用了很久，主要用刀，其他都生锈了
       perfect:
         name: 收藏级军刀
-        feature: 50个功能，包括指南针和激光笔
+        feature: 超多功能的，包括指南针和激光笔
         irony: 从工具变成收藏品
-        punchline: 收藏级军刀50个功能，装在玻璃柜里——主人每年擦一次灰，但从来没带出去过
+        punchline: 收藏级军刀功能超多，装在玻璃柜里——主人每年擦一次灰，但从来没带出去过
     breadthVariants:
       specialist: 只用1个功能（刀专家）
       tShaped: 主用刀+兼会螺丝刀+能开瓶
       piShaped: 刀专家+锯专家（两个功能用得好）
-      generalist: 什么功能都用（但都只用1次）
+      generalist: 什么功能都用（但都只用几次）
     temperament:
       controller: 严格控制用哪个功能，按场景选择
       laisserFaire: 随便用，能用就行
@@ -596,4 +596,4 @@ index:
 # -> 风格: Controller (控制型)
 # 
 # 匹配结果: 装修中的房子 (成人版) + Generalist变体 + 控制型风格
-# "一位控制欲极强的全栈装修师，在同时装修33个房间，每个都只装了一半"
+# "一位控制欲极强的全栈装修师，在同时装修一堆房间，每个都只装了一半"
