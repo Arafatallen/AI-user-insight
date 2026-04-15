@@ -1,0 +1,599 @@
+# AI Insight 100种物品枚举库
+# 基于 深度(4档) × 广度(4型) × 风格(3种) 的三维框架
+# 实际选取最经典、最具代表性的100种组合
+
+## 使用说明
+# 每种物品包含：
+# - base: 基础原型
+# - stages: 4个成长阶段（幼体/成长/成体/完全体）
+# - breadthVariants: 4种广度变体（专精/T型/π型/全栈）  
+# - temperament: 3种调教风格（控制型/放养型/导师型）
+
+library:
+  # ============================================
+  # 类别1: 动物类 (20种)
+  # ============================================
+  
+  - id: squirrel
+    name: 松鼠
+    category: animal
+    description: 储备与遗忘的循环
+    baseTraits: [囤积, 分散, 遗忘, 焦虑]
+    stages:
+      larva: 
+        name: 幼鼠
+        feature: 只藏一颗松果，转头就忘
+        irony: 以为自己有食物，其实胃里空空
+        punchline: 一只幼鼠藏了1颗松果，1分钟后忘了在哪，饿死了
+      pupa:
+        name: 青年鼠  
+        feature: 到处埋松果，偶尔能找到
+        irony: 秋天很忙，冬天很慌
+        punchline: 一只青年鼠埋了100颗松果，冬天找到3颗，饿瘦了
+      adult:
+        name: 成年鼠
+        feature: 有计划储备，建立记忆地图
+        irony: 能活下来，但永远焦虑
+        punchline: 一只成年鼠建立了GPS地图，冬天不愁——但春天又在囤，停不下来
+      perfect:
+        name: 松鼠王
+        feature: 不仅自己囤，还教小松鼠囤
+        irony: 从囤积者变成囤积教父
+        punchline: 松鼠王写了《松果囤积指南》，弟子三千——但它自己还在囤
+    breadthVariants:
+      specialist: 只囤一种松果（橡果专家）
+      tShaped: 主囤橡果+兼囤坚果+会找水源
+      piShaped: 橡果专家+松针建筑家
+      generalist: 什么都囤（松果、坚果、浆果、蘑菇、人类垃圾）
+    temperament:
+      controller: 按大小/颜色分类囤积，有详细地图
+      laisserFaire: 随便埋，靠嗅觉找
+      mentor: 教小松鼠"要分散风险，多几个储藏点"
+
+  - id: hamster
+    name: 仓鼠
+    category: animal
+    description: 原地奔跑的勤奋
+    baseTraits: [勤奋, 循环, 无进展, 自我感动]
+    stages:
+      larva:
+        name: 幼仓鼠
+        feature: 跑3圈就累，停下来吃瓜子
+        irony: 还没学会"坚持"
+        punchline: 幼仓鼠跑了3圈，吃了5分钟瓜子——它以为这就是生活
+      pupa:
+        name: 青年仓鼠
+        feature: 能跑30圈，但只在晚上跑
+        irony: 很努力，但没人看见（包括自己）
+        punchline: 青年仓鼠每晚跑30圈，跑轮上刻着"坚持"——它没注意到轮子在原地
+      adult:
+        name: 成年仓鼠
+        feature: 每天跑100圈，制定配速计划
+        irony: 配速提高了，笼子还在原地
+        punchline: 成年仓鼠制定了《100天配速提升计划》，第100天它跑得更快了——笼子还在原地，它也更累了
+      perfect:
+        name: 仓鼠教练
+        feature: 不仅自己跑，还教别的仓鼠跑
+        irony: 从跑者变成跑步教练，但还是在轮子上
+        punchline: 仓鼠教练写了《轮子上的哲学》，弟子学会跑步——但没人问过"为什么要跑"
+    breadthVariants:
+      specialist: 只跑轮子，其他什么都不做
+      tShaped: 主跑轮子+兼做窝+会储存
+      piShaped: 跑轮专家+嗑瓜子专家
+      generalist: 跑轮、做窝、囤粮、挖洞、尝试越狱（但都失败）
+    temperament:
+      controller: 严格控制每天跑多少圈，吃什么配餐
+      laisserFaire: 想跑就跑，想吃就吃
+      mentor: 教小仓鼠"要坚持，天道酬勤"
+
+  - id: bowerbird
+    name: 园丁鸟
+    category: animal
+    description: 展示型建造者
+    baseTraits: [展示, 精致, 无用, 求认可]
+    stages:
+      larva:
+        name: 幼鸟
+        feature: 捡一片叶子，插在地上
+        irony: 以为这就是求偶亭
+        punchline: 幼鸟插了一片叶子，等了一整天——没有雌鸟来，因为它插在了马路中间
+      pupa:
+        name: 青年鸟
+        feature: 建了个草窝，放了几个石子
+        irony: 有形状了，但还很简陋
+        punchline: 青年鸟建了草窝，放了3颗石子——雌鸟路过看了一眼，走了，去找有蓝色塑料片的
+      adult:
+        name: 成年鸟
+        feature: 精心收集彩色石子、瓶盖、羽毛，排列成图案
+        irony: 亭子精美，但不能住
+        punchline: 成年鸟的亭子有247颗彩色石子，按渐变色排列——雌鸟来看了10分钟，走了，去找能住的房子
+      perfect:
+        name: 鸟王
+        feature: 不仅自己建，还偷别的鸟的装饰品
+        irony: 从建造者变成收集家，甚至小偷
+        punchline: 鸟王的亭子有1000件装饰品，包括偷来的——雌鸟来了，但只问"这是从哪偷的"
+    breadthVariants:
+      specialist: 只用蓝色物品（蓝色狂魔）
+      tShaped: 主用蓝色+兼用金属+会用空间
+      piShaped: 蓝色专家+红色专家（两栋亭子）
+      generalist: 什么颜色都用（彩虹亭，但杂乱）
+    temperament:
+      controller: 按颜色/大小严格分类排列
+      laisserFaire: 随便放，靠数量取胜
+      mentor: 教小鸟"要对称，要有视觉焦点"
+
+  # ============================================
+  # 类别2: 植物类 (15种)
+  # ============================================
+  
+  - id: epiphyllum
+    name: 昙花
+    category: plant
+    description: 惊艳但短暂
+    baseTraits: [惊艳, 短暂, 不可持续, 令人惋惜]
+    stages:
+      larva:
+        name: 幼苗
+        feature: 长叶子，不开花
+        irony: 大家都在等，它说"再等等"
+        punchline: 昙花幼苗长了3年叶子——园丁说"快了"，说了36个月
+      pupa:
+        name: 小树
+        feature: 开了一朵花，只开了1小时
+        irony: 确实开了，但没人看见
+        punchline: 昙花开了一朵，凌晨3点开，4点谢——只有夜猫子看见，拍了张模糊的照片
+      adult:
+        name: 成树
+        feature: 每年开一次，一次4小时，很壮观
+        irony: 很美，但只能拍照，不能结果
+        punchline: 昙花开了33次，每次朋友圈100个赞——但没人吃过昙花果，因为不结果
+      perfect:
+        name: 昙花王
+        feature: 不仅自己开，还被移植到各地展览
+        irony: 成为景点，但依然是昙花一现在
+        punchline: 昙花王在植物园有专馆，门票20元——人们在馆外等4小时，看10分钟，然后发朋友圈"太美了，稍纵即逝"
+    breadthVariants:
+      specialist: 只开白花（单色专家）
+      tShaped: 主开白花+兼长绿叶+会扦插
+      piShaped: 白花专家+红花专家（两株）
+      generalist: 什么颜色都开（但每色只开一朵）
+    temperament:
+      controller: 严格控制开花时间、光照、温度
+      laisserFaire: 随便长，想开就开
+      mentor: 教其他昙花"要在夜间开，比较神秘"
+
+  - id: mimosa
+    name: 含羞草
+    category: plant
+    description: 敏感而退缩
+    baseTraits: [敏感, 防御, 退缩, 不成长]
+    stages:
+      larva:
+        name: 幼苗
+        feature: 碰一下就闭合，过会儿开
+        irony: 还在学习"这个世界会伤害我"
+        punchline: 含羞草幼苗被碰了，闭合了——5分钟后开了，以为安全了，又被碰，又闭合
+      pupa:
+        name: 青年株
+        feature: 一碰就闭合，很久才开
+        irony: 学会了"外面很危险"
+        punchline: 青年含羞草被碰了33次，现在碰一下就闭——它忘了要光合作用，整天闭着
+      adult:
+        name: 成株
+        feature: 叶子永远半闭，不再完全打开
+        irony: 从"敏感"变成"萎缩"
+        punchline: 成株含羞草叶子半永久闭合——园丁说"它病了"，医生说"它只是太敏感"
+      perfect:
+        name: 含羞草王
+        feature: 不仅自己闭，还教其他草闭
+        irony: 成为"敏感美学"的代表
+        punchline: 含羞草王在植物园有专馆，标语"触碰即艺术"——但没人敢碰，因为一碰就闭，看不见叶子
+    breadthVariants:
+      specialist: 只对触碰敏感（触碰专家）
+      tShaped: 主防触碰+兼会卷叶+能预测天气
+      piShaped: 防触碰专家+防干旱专家
+      generalist: 对触碰、光照、声音都敏感（整天闭着）
+    temperament:
+      controller: 严格控制谁可以碰、碰哪里
+      laisserFaire: 随便碰，反正都会闭
+      mentor: 教小草"要敏感，这是生存策略"
+
+  # ============================================
+  # 类别3: 建筑/空间类 (15种)
+  # ============================================
+  
+  - id: renovation_house
+    name: 装修中的房子
+    category: building
+    description: 永远在优化，从未入住
+    baseTraits: [优化, 未完成, 展示, 不可居住]
+    stages:
+      larva:
+        name: 毛坯房
+        feature: 只画图纸，没开始施工
+        irony: 还没动工，但已经换了3个设计师
+        punchline: 毛坯房设计图改了33版，设计师换了5个——墙还是白的，但房主说"这次风格对了"
+      pupa:
+        name: 简装房
+        feature: 施工一半，停工了
+        irony: 看得见希望，但住不进去
+        punchline: 简装房水电做完了，瓦工进场3天走了——房主说"等等，我想改方案"
+      adult:
+        name: 精装房
+        feature: 装修完成，家具进场，但很乱
+        irony: 能住了，但房主还在调整
+        punchline: 精装房装修了2年，家具进场了——但房主每天调沙发布局，自己睡客厅
+      perfect:
+        name: 样板间
+        feature: 完美展示，禁止入住，仅供参观
+        irony: 从家变成展品
+        punchline: 样板间开放参观，门票50元——房主自己住在隔壁出租屋，每天来擦灰
+    breadthVariants:
+      specialist: 只装修一个房间（到极致）
+      tShaped: 主卧精装+兼客厅简装+会厨房
+      piShaped: 主卧专家+书房专家（两个房间精装）
+      generalist: 每个房间都开修（但都只修一半）
+    temperament:
+      controller: 严格控制工期、预算、配色方案
+      laisserFaire: 随便装，看工人心情
+      mentor: 教邻居"装修要一步到位，别像我"
+
+  - id: showroom
+    name: 样板房
+    category: building
+    description: 精致但虚假
+    baseTraits: [虚假, 展示, 不可使用, 欺骗性]
+    stages:
+      larva:
+        name: 塑料样板
+        feature: 家具全是塑料，看着像真的
+        irony: 连假的都很简陋
+        punchline: 塑料样板房沙发是画的，床是纸板——顾客坐下去，发现是硬的
+      pupa:
+        name: 精致样板
+        feature: 家具精美，但不能坐/用
+        irony: 好看，但功能为零
+        punchline: 精致样板房沙发是真皮的，但里面塞的是泡沫——坐下去弹不起来，因为没弹簧
+      adult:
+        name: 豪华样板
+        feature: 水晶灯、大理石、但水管不通
+        irony: 表面奢华，内部空洞
+        punchline: 豪华样板房有水晶灯、大理石地面——但水龙头不出水，因为没接水管
+      perfect:
+        name: 博物馆样板
+        feature: 成为景点，有讲解服务
+        irony: 从卖房工具变成文化遗产
+        punchline: 博物馆样板房有志愿者讲解"这是2010年代房地产泡沫的见证"——导游说"别碰那沙发，会塌"
+    breadthVariants:
+      specialist: 只展示一种风格（极简专家）
+      tShaped: 主极简+兼会轻奢+能北欧
+      piShaped: 极简专家+中式专家（两套样板）
+      generalist: 每个房间不同风格（混搭风）
+    temperament:
+      controller: 严格控制每一件摆设角度
+      laisserFaire: 随便摆，看着差不多就行
+      mentor: 教看房者"这是理想生活，你买不起"
+
+  # ============================================
+  # 类别4: 消费/物品类 (15种)
+  # ============================================
+  
+  - id: gym_membership
+    name: 健身房会员卡
+    category: consumption
+    description: 付费的幻觉
+    baseTraits: [付费, 不使用, 自我安慰, 仪式感]
+    stages:
+      larva:
+        name: 体验卡
+        feature: 只去过1次，拍了个照
+        irony: 连试都懒得试
+        punchline: 体验卡去了1次，拍了10张照片，发了朋友圈"健身打卡第1天"——然后没然后了
+      pupa:
+        name: 月卡
+        feature: 去了3次，放弃了
+        irony: 试过了，坚持不下去
+        punchline: 月卡去了3次，每次跑步10分钟，洗澡30分钟——第4次直接洗澡，然后不来了
+      adult:
+        name: 年卡
+        feature: 去了10次，但无效果
+        irony: 坚持了，但方法不对
+        punchline: 年卡去了10次，每次都练自拍——1年后体重没变，但手机里多了200张健身照
+      perfect:
+        name: 终身卡
+        feature: 不仅自己去，还拉朋友办卡
+        irony: 从受害者变成推销员
+        punchline: 终身卡用户办了5年，拉了10个朋友办卡——健身房老板给他发了"最佳推销员"奖
+    breadthVariants:
+      specialist: 只练一个器械（跑步机专家）
+      tShaped: 主跑步+兼会游泳+能瑜伽
+      piShaped: 跑步专家+力量专家（两张卡）
+      generalist: 什么课都报（瑜伽、游泳、拳击、舞蹈——都去1次）
+    temperament:
+      controller: 严格按计划训练，记录每次数据
+      laisserFaire: 想练就练，看心情
+      mentor: 教朋友"办卡是为了督促自己"
+
+  - id: read_it_later
+    name: 收藏夹"稍后阅读"
+    category: consumption
+    description: 转移注意力的艺术
+    baseTraits: [收藏, 不读, 焦虑, 自欺欺人]
+    stages:
+      larva:
+        name: 新手收藏夹
+        feature: 收藏了10篇，看了1篇
+        irony: 刚开始，还有救
+        punchline: 新手收藏夹10篇，看了1篇——他说"明天一定看"
+      pupa:
+        name: 重度收藏夹
+        feature: 收藏了100篇，看了5篇
+        irony: 收藏即遗忘
+        punchline: 重度收藏夹100篇，标记"稍后阅读"——最早的1篇是3个月前的，他至今"稍后"了90天
+      adult:
+        name: 超级收藏夹
+        feature: 收藏了1000篇，从不看，但继续收藏
+        irony: 收藏成了强迫症
+        punchline: 超级收藏夹1000篇，每天新增10篇——他说"这是知识管理"，但搜索时永远用百度
+      perfect:
+        name: 收藏夹博主
+        feature: 分享收藏夹，教人怎么收藏
+        irony: 从囤积者变成收藏教育家
+        punchline: 收藏夹博主写了《如何高效收藏》，有10万粉丝——但他自己的收藏夹有5000篇未读
+    breadthVariants:
+      specialist: 只收藏一个领域（技术文章专家）
+      tShaped: 主技术+兼会产品+能商业
+      piShaped: 技术专家+设计专家（两个收藏夹）
+      generalist: 什么类型都收藏（技术、美食、旅游、情感——都不看）
+    temperament:
+      controller: 严格分类、打标签、建文件夹
+      laisserFaire: 随便收藏，不分类
+      mentor: 教别人"要定期清理收藏夹"
+
+  # ============================================
+  # 类别5: 自然/天象类 (10种)
+  # ============================================
+  
+  - id: meteor
+    name: 陨石
+    category: nature
+    description: 燃烧自己的闪亮
+    baseTraits: [闪亮, 短暂, 毁灭, 无痕迹]
+    stages:
+      larva:
+        name: 小流星
+        feature: 进入大气层，闪了一下，没了
+        irony: 还没被看见，就烧完了
+        punchline: 小流星闪了一下，只有天文望远镜看见—— astronomer 记了笔记，但忘了名字
+      pupa:
+        name: 流星
+        feature: 划过天空，被许愿，然后没了
+        irony: 被看见，被利用，被遗忘
+        punchline: 流星划过，1000人许愿——愿望还没实现，流星已经烧完了
+      adult:
+        name: 火流星
+        feature: 很亮，落地成坑，留下陨石
+        irony: 留下了痕迹，但不是星星
+        punchline: 火流星落地，砸了个坑，留下陨石——人们围着坑拍照，但没人记得它曾是星星
+      perfect:
+        name: 陨石收藏家
+        feature: 不仅坠落，还被收藏、展览、研究
+        irony: 从星星变成石头，再变成展品
+        punchline: 陨石在博物馆展出，门票20元——标签写"来自太空"，但它现在只是块石头
+    breadthVariants:
+      specialist: 只燃烧一次（单次坠落专家）
+      tShaped: 主燃烧+兼会发光+能留痕
+      piShaped: 燃烧专家+撞击专家（两次坠落）
+      generalist: 多次进出大气层（但都烧完了）
+    temperament:
+      controller: 严格控制坠落角度、速度、落点
+      laisserFaire: 随便飞，撞哪算哪
+      mentor: 教小流星"要亮，要让人看见"
+
+  # ============================================
+  # 类别6: 游戏/娱乐类 (10种)
+  # ============================================
+  
+  - id: snake_game
+    name: 贪吃蛇
+    category: game
+    description: 成长即毁灭
+    baseTraits: [成长, 自噬, 循环, 必然死亡]
+    stages:
+      larva:
+        name: 小蛇
+        feature: 吃了3个豆子，撞墙死了
+        irony: 还没长大，就死了
+        punchline: 小蛇吃了3个豆子，撞墙了——它还没学会转方向键
+      pupa:
+        name: 中蛇
+        feature: 吃了20个豆子，撞到自己尾巴
+        irony: 长大了，被自己困住
+        punchline: 中蛇吃了20个豆子，身体长了——转了个弯，撞到自己尾巴，游戏结束
+      adult:
+        name: 大蛇
+        feature: 吃了50个豆子，屏幕装不下
+        irony: 成功到失败只有一步
+        punchline: 大蛇吃了50个豆子，占满屏幕——没地方去了，咬了一口自己的尾巴，game over
+      perfect:
+        name: 蛇王
+        feature: 不仅自己吃，还教别的蛇怎么吃
+        irony: 从玩家变成教练，但游戏还是那个游戏
+        punchline: 蛇王写了《贪吃蛇高分攻略》，弟子破了纪录——但蛇王自己还是撞墙，因为攻略是理论
+    breadthVariants:
+      specialist: 只吃一种豆子（单色专家）
+      tShaped: 主吃豆子+兼会转弯+能加速
+      piShaped: 吃豆子专家+躲避专家（两种模式）
+      generalist: 什么模式都玩（经典、时间模式、障碍模式——都不高分）
+    temperament:
+      controller: 严格控制路线，计算最优解
+      laisserFaire: 随便吃，撞了再开一局
+      mentor: 教小蛇"要规划路线，别咬尾巴"
+
+  # ============================================
+  # 类别7: 工具/器物类 (15种)
+  # ============================================
+  
+  - id: swiss_army_knife
+    name: 瑞士军刀
+    category: tool
+    description: 多功能但样样平庸
+    baseTraits: [多功能, 平庸, 应急, 不专业]
+    stages:
+      larva:
+        name: 两用刀
+        feature: 只有刀和螺丝刀
+        irony: 功能少，但能用
+        punchline: 两用刀只有刀和螺丝刀——切菜一般，拧螺丝一般，但都能干
+      pupa:
+        name: 五用刀
+        feature: 刀、锯、剪刀、螺丝刀、开瓶器
+        irony: 功能多了，每个都不好用
+        punchline: 五用刀有5个功能——切菜不如菜刀，锯木不如锯子，但应急时都能凑合
+      adult:
+        name: 十用刀
+        feature: 10个功能，但都很小
+        irony: 功能越多，每个越废
+        punchline: 十用刀有10个功能，包括牙签和镊子——主人用了3年，主要用刀，其他都生锈了
+      perfect:
+        name: 收藏级军刀
+        feature: 50个功能，包括指南针和激光笔
+        irony: 从工具变成收藏品
+        punchline: 收藏级军刀50个功能，装在玻璃柜里——主人每年擦一次灰，但从来没带出去过
+    breadthVariants:
+      specialist: 只用1个功能（刀专家）
+      tShaped: 主用刀+兼会螺丝刀+能开瓶
+      piShaped: 刀专家+锯专家（两个功能用得好）
+      generalist: 什么功能都用（但都只用1次）
+    temperament:
+      controller: 严格控制用哪个功能，按场景选择
+      laisserFaire: 随便用，能用就行
+      mentor: 教别人"多功能是优势，要灵活"
+
+  # ============================================
+  # 100种完整清单（索引）
+  # ============================================
+  
+index:
+  # 动物类 (1-20)
+  1: 松鼠 (squirrel) - 储备与遗忘
+  2: 仓鼠 (hamster) - 原地奔跑
+  3: 园丁鸟 (bowerbird) - 展示建造
+  4: 孔雀 (peacock) - 炫耀展示
+  5: 候鸟 (migratory_bird) - 周期性迁徙
+  6: 蜘蛛 (spider) - 织网等待
+  7: 蜜蜂 (bee) - 忙碌但盲目
+  8: 蚂蚁 (ant) - 勤劳但重复
+  9: 蜗牛 (snail) - 缓慢但坚持
+  10: 变色龙 (chameleon) - 频繁变色
+  11: 猫头鹰 (owl) - 夜间独行者
+  12: 乌鸦 (crow) - 收集癖
+  13: 海豚 (dolphin) - 聪明但被困
+  14: 企鹅 (penguin) - 群体中的个体
+  15: 章鱼 (octopus) - 多任务处理
+  16: 袋鼠 (kangaroo) - 带着包袱前进
+  17: 刺猬 (hedgehog) - 防御型
+  18: 狐狸 (fox) - 狡猾但孤独
+  19: 狼 (wolf) - 群居但独行
+  20: 熊猫 (panda) - 稀有但懒
+
+  # 植物类 (21-35)
+  21: 昙花 (epiphyllum) - 惊艳短暂
+  22: 含羞草 (mimosa) - 敏感退缩
+  23: 竹子 (bamboo) - 快速生长但空心
+  24: 葡萄藤 (grapevine) - 攀爬依赖
+  25: 蒲公英 (dandelion) - 随风飘散
+  26: 仙人掌 (cactus) - 自给自足
+  27: 藤蔓 (vine) - 缠绕依赖
+  28: 松树 (pine) - 常青但僵硬
+  29: 柳树 (willow) - 随风摇摆
+  30: 荷花 (lotus) - 出淤泥不染（但根在泥里）
+  31: 向日葵 (sunflower) - 追光但被动
+  32: 多肉植物 (succulent) - 耐旱但生长慢
+  33: 盆景 (bonsai) - 被控制的生长
+  34: 杂草 (weed) - 顽强但无用
+  35: 嫁接果树 (grafted_tree) - 组合但不纯
+
+  # 建筑类 (36-50)
+  36: 装修中的房子 (renovation_house)
+  37: 样板房 (showroom)
+  38: 烂尾楼 (unfinished_building)
+  39: 移动房屋 (mobile_home)
+  40: 树屋 (treehouse)
+  41: 玻璃房 (glass_house)
+  42: 地下室 (basement)
+  43: 阁楼 (attic)
+  44: 迷宫 (maze)
+  45: 城堡 (castle)
+  46: 帐篷 (tent)
+  47: 桥 (bridge)
+  48: 隧道 (tunnel)
+  49: 灯塔 (lighthouse)
+  50: 风车 (windmill)
+
+  # 消费类 (51-65)
+  51: 健身房会员卡 (gym_membership)
+  52: 收藏夹"稍后阅读" (read_it_later)
+  53: 网盘会员 (cloud_storage)
+  54: 视频会员 (video_membership)
+  55: 音乐会员 (music_membership)
+  56: 知识付费课程 (online_course)
+  57: 电子书书架 (ebook_shelf)
+  58: 购物车 (shopping_cart)
+  59: 优惠券收藏夹 (coupon_collection)
+  60: 打卡App (checkin_app)
+  61: 记账软件 (accounting_app)
+  62: 待办清单 (todo_list)
+  63: 年度计划 (yearly_plan)
+  64: 日记本 (diary)
+  65: 相册 (photo_album)
+
+  # 天象/自然类 (66-75)
+  66: 陨石 (meteor)
+  67: 彩虹 (rainbow)
+  68: 海市蜃楼 (mirage)
+  69: 瀑布 (waterfall)
+  70: 火山 (volcano)
+  71: 冰山 (iceberg)
+  72: 沙漠绿洲 (oasis)
+  73: 潮汐 (tide)
+  74: 季风 (monsoon)
+  75: 日食 (solar_eclipse)
+
+  # 游戏/娱乐类 (76-85)
+  76: 贪吃蛇 (snake_game)
+  77: 俄罗斯方块 (tetris)
+  78: 消消乐 (match3_game)
+  79: 跑酷游戏 (parkour_game)
+  80: 模拟城市 (simcity)
+  81: 沙盒游戏 (sandbox_game)
+  82: 收集卡牌 (card_collection)
+  83: 盲盒 (blind_box)
+  84: 扭蛋 (gashapon)
+  85: 抓娃娃机 (claw_machine)
+
+  # 工具/器物类 (86-100)
+  86: 瑞士军刀 (swiss_army_knife)
+  87: 万能钥匙 (master_key)
+  88: 瑞士手表 (swiss_watch)
+  89: 古董车 (vintage_car)
+  90: 乐高积木 (lego)
+  91: 魔方 (rubiks_cube)
+  92: 拼图 (jigsaw_puzzle)
+  93: 模型套件 (model_kit)
+  94: 工具箱 (toolbox)
+  95: 厨房小家电 (kitchen_gadget)
+  96: 跑步机 (treadmill)
+  97: 按摩椅 (massage_chair)
+  98: 咖啡机 (coffee_machine)
+  99: 相机镜头 (camera_lens)
+  100: 旅行箱 (suitcase)
+
+# 使用示例
+# 用户画像: H-L-L-H-H-L-L-L (你的编码)
+# -> 深度: Adult (成体期)
+# -> 广度: Generalist (全栈)
+# -> 风格: Controller (控制型)
+# 
+# 匹配结果: 装修中的房子 (成人版) + Generalist变体 + 控制型风格
+# "一位控制欲极强的全栈装修师，在同时装修33个房间，每个都只装了一半"
