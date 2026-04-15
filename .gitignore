@@ -1,0 +1,7 @@
+node_modules/
+*.tgz
+*.log
+.DS_Store
+test-*.json
+user-insight-reports/
+.env

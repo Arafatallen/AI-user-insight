@@ -1,0 +1,20 @@
+{
+  "name": "@clawd/user-insight",
+  "version": "0.1.0",
+  "description": "一键分析 OpenClaw 用户画像并生成本地 HTML 报告",
+  "bin": {
+    "user-insight": "./bin/setup.js",
+    "user-insight-collect": "./bin/collect.js",
+    "user-insight-report": "./bin/report.js",
+    "user-insight-run": "./bin/run.js"
+  },
+  "scripts": {
+    "postinstall": "node bin/setup.js",
+    "test": "node bin/setup.js"
+  },
+  "keywords": ["openclaw", "skill", "analytics", "persona"],
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  }
+}
